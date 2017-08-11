@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SampleProject</string>
+    <string name="tv_inject">dagger_注入</string>
+</resources>

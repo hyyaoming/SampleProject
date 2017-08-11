@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="note.lym.org.sampleproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".nav.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".nav.statusbar.BigImageActivity"/>
+        <activity android:name=".nav.statusbar.NoImageActivity"/>
+        <activity android:name=".nav.autofittextview.TextActivity">
+        </activity>
+        <activity android:name=".nav.bindview.BindViewActivity">
+        </activity>
+        <activity android:name="note.lym.org.sampleproject.nav.dagger.activity.DaggerActivity">
+        </activity>
+        <activity android:name=".nav.statusbar.StatusBarActivity"/>
+        <activity android:name=".nav.dagger.activity.InjectActivity"/>
+        <activity android:name=".nav.dagger.activity.ModuleActivity"/>
+    </application>
+
+</manifest>
